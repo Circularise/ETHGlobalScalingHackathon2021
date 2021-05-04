@@ -21,7 +21,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "localhost";
+const defaultNetwork = "arbitrumTN4";
 
 function mnemonic() {
   try {
@@ -89,6 +89,13 @@ module.exports = {
     },
     matic: {
       url: 'https://rpc-mainnet.maticvigil.com/',
+      gasPrice: 1000000000,
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
+    arbitrumTN4: {
+      url: 'https://kovan4.arbitrum.io/rpc',
       gasPrice: 1000000000,
       accounts: {
         mnemonic: mnemonic(),
