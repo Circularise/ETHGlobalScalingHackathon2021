@@ -108,5 +108,15 @@ export const NETWORKS = {
         rpcUrl: "https://kovan4.arbitrum.io/rpc",
         faucet: "https://faucet.arbitrum.io/",
         blockExplorer: "https://explorer.offchainlabs.com/#/",
+    },
+    SKALE: {
+        name: "SKALE",
+        color: '#000000',
+        chainId: 344435,
+        price: 1,
+        gasPrice:1000000000,
+        rpcUrl: "https://dev-testnet-v1-0.skalelabs.com",
+        faucet: "https://faucet.skale.network/",
+        blockExplorer: "https://explorer.skale.network/",
     }
 }

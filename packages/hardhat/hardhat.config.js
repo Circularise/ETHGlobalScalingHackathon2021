@@ -21,7 +21,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "arbitrumTN4";
+const defaultNetwork = "SKALE";
 
 function mnemonic() {
   try {
@@ -96,6 +96,13 @@ module.exports = {
     },
     arbitrumTN4: {
       url: 'https://kovan4.arbitrum.io/rpc',
+      gasPrice: 1000000000,
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
+    SKALE: {
+      url: 'https://dev-testnet-v1-0.skalelabs.com',
       gasPrice: 1000000000,
       accounts: {
         mnemonic: mnemonic(),
